@@ -37,7 +37,7 @@ public class Main {
             salesDetails.setAmount(resultSet.getInt("Amount"));
             salesDetails.setLocation(resultSet.getString("Location"));
             //Write data to JSON file. This Class needs three Jackson maven dependencies
-            objectMapper.writeValue(new File(dirPath+ "jsonfile_" + count++ + ".json"), salesDetails);
+            objectMapper.writeValue(new File(dirPath+ "json_" + count++ + ".json"), salesDetails);
             //Next two  line are to create a consolidated JSON file
             String jsonString = gson.toJson(salesDetails);
             jsonArray.add(jsonString);
