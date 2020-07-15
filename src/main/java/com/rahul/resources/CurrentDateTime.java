@@ -1,4 +1,4 @@
-package resources;
+package com.rahul.resources;
 
 public class CurrentDateTime {
 

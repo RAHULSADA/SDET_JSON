@@ -1,3 +1,5 @@
+package com.rahul;
+
 public class SalesDetails {
 
     private String bookName;
