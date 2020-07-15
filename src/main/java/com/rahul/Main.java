@@ -1,8 +1,12 @@
+package com.rahul;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import org.apache.commons.text.StringEscapeUtils;
 import org.json.simple.JSONObject;
+import com.rahul.resources.JsonOperations;
+import com.rahul.resources.Utilities;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -48,5 +52,7 @@ public class Main {
         fileWriter.write(temp);
         fileWriter.close();
 
+        JsonOperations jsonOperations = new JsonOperations();
+        jsonOperations.jsonToJava();
     }
 }
